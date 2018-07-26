@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/svg-with-js.min.css">
+    <title>Font Awesome Viewer - Wiki</title>
+</head>
+<body class="bg-light">
+    <div class="row">
+        <div class="col-2 mt-3">
+            <div class="row">
+                <div class="col-12 text-center">
+                        <h3>Menu</h3>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <a href="/index.html" class="btn btn-outline-primary btn-block">Icons</a>
+                </div>
+                <div class="col-12 mt-5">
+                    <a href="/wiki.html#BasicUsage" class="btn btn-outline-primary btn-block">Basic Usage</a>
+                </div>
+                <div class="col-12 mt-2">
+                    <a href="/wiki.html#SizingIcons" class="btn btn-outline-primary btn-block">Sizing Icons</a>
+                </div>
+                <div class="col-12 mt-2">
+                    <a href="/wiki.html#FixedWidthIcons" class="btn btn-outline-primary btn-block">Fixed Width Icons</a>
+                </div>
+                <div class="col-12 mt-2">
+                    <a href="/wiki.html#IconsInAList" class="btn btn-outline-primary btn-block">Icons in a List</a>
+                </div>
+                <div class="col-12 mt-2">
+                    <a href="/wiki.html#RotatingIcons" class="btn btn-outline-primary btn-block">Rotating Icons</a>
+                </div>
+                <div class="col-12 mt-2">
+                    <a href="/wiki.html#AnimatingIcons" class="btn btn-outline-primary btn-block">Animating Icons</a>
+                </div>
+                <div class="col-12 mt-2">
+                    <a href="/wiki.html#BorderedAndPulledIcons" class="btn btn-outline-primary btn-block">Bordered + Pulled Icons</a>
+                </div>
+                <div class="col-12 mt-2">
+                    <a href="/wiki.html#StackingIcons" class="btn btn-outline-primary btn-block">Stacking Icons</a>
+                </div>
+                <div class="col-12 mt-2">
+                    <a href="/wiki.html#PowerTransforms" class="btn btn-outline-primary btn-block">Power Transforms</a>
+                </div>
+                <div class="col-12 mt-2">
+                    <a href="/wiki.html#MaskingIcons" class="btn btn-outline-primary btn-block">Masking Icons</a>
+                </div>
+                <div class="col-12 mt-2">
+                    <a href="/wiki.html#LayeringTextCounters" class="btn btn-outline-primary btn-block">Layering, Text and Counters</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-10">
+            <div class="row mt-3"> <!-- Entry -->
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 id="BasicUsage">Basic Usage</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <table class="table text-center table-bordered">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>Style</th>
+                                        <th>Availability</th>
+                                        <th>Style Prefix</th>
+                                        <th>Example Code</th>
+                                        <th>Example Icon</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Solid</td>
+                                        <td>Free</td>
+                                        <td>fas</td>
+                                        <td>&lt;i class=&quot;fas fa-atom&quot;&gt;&lt;/i&gt;</td>
+                                        <td><i class="fas fa-atom"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Regular</td>
+                                        <td>Pro</td>
+                                        <td>far</td>
+                                        <td>&lt;i class=&quot;far fa-atom&quot;&gt;&lt;/i&gt;</td>
+                                        <td><i class="far fa-atom"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Light</td>
+                                        <td>Pro</td>
+                                        <td>fal</td>
+                                        <td>&lt;i class=&quot;fal fa-atom&quot;&gt;&lt;/i&gt;</td>
+                                        <td><i class="fal fa-atom"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brands</td>
+                                        <td>Free</td>
+                                        <td>fab</td>
+                                        <td>&lt;i class=&quot;fab fa-font-awesome&quot;&gt;&lt;/i&gt;</td>
+                                        <td><i class="fab fa-font-awesome"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Entry -->
+            <div class="row mt-5"> <!-- Entry -->
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 id="#SizingIcons">Sizing Icons</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>To change the size of an icon you can simply change the <span style="color:#FF922B">font-size</span>. The icon is handled as an character so if you change the <span style="color:#FF922B">color</span> attribute the icon will change its color. There are also some preset sizes for the icons delivered by the fontawesome framework. The prefixes are <span style="color:#FF922B">fa-xs</span>, <span style="color:#FF922B">fa-sm</span>, <span style="color:#FF922B">fa-lg</span> and <span style="color:#FF922B">fa-2x</span>-<span style="color:#FF922B">fa-10x</span></p>
+                            <table class="table text-center table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th style="width:20%;">Prefix</th>
+                                        <th style="width:25%;">Size</th>
+                                        <th>Icon</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>fa-xs</td>
+                                        <td>.75em</td>
+                                        <td><i class="fas fa-atom fa-xs"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>fa-sm</td>
+                                        <td>.875em</td>
+                                        <td><i class="fas fa-atom fa-sm"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>fa-lg</td>
+                                        <td>1.33em</td>
+                                        <td><i class="fas fa-atom fa-lg"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="vertical-align: middle;">fa-2x</td>
+                                        <td style="vertical-align: middle;">2em</td>
+                                        <td><i class="fas fa-atom fa-2x"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="vertical-align: middle;">fa-3x</td>
+                                        <td style="vertical-align: middle;">3em</td>
+                                        <td><i class="fas fa-atom fa-3x"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="vertical-align: middle;">fa-5x</td>
+                                        <td style="vertical-align: middle;">5em</td>
+                                        <td><i class="fas fa-atom fa-5x"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="border rounded py-2 px-2 bg-dark text-light">
+                                <span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">i</span> <span style="color:#FFA94D">class</span><span style="color:#868E96">=&quot;</span>fas fa-atom fa-xs<span style="color:#868E96">&quot;&gt;&lt;/</span><span style="color:#FFA94D">i</span><span style="color:#868E96">&gt;</span><br>
+                                <span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">i</span> <span style="color:#FFA94D">class</span><span style="color:#868E96">=&quot;</span>fas fa-atom fa-sm<span style="color:#868E96">&quot;&gt;&lt;/</span><span style="color:#FFA94D">i</span><span style="color:#868E96">&gt;</span><br>
+                                <span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">i</span> <span style="color:#FFA94D">class</span><span style="color:#868E96">=&quot;</span>fas fa-atom fa-lg<span style="color:#868E96">&quot;&gt;&lt;/</span><span style="color:#FFA94D">i</span><span style="color:#868E96">&gt;</span><br>
+                                <span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">i</span> <span style="color:#FFA94D">class</span><span style="color:#868E96">=&quot;</span>fas fa-atom fa-2x<span style="color:#868E96">&quot;&gt;&lt;/</span><span style="color:#FFA94D">i</span><span style="color:#868E96">&gt;</span><br>
+                                <span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">i</span> <span style="color:#FFA94D">class</span><span style="color:#868E96">=&quot;</span>fas fa-atom fa-3x<span style="color:#868E96">&quot;&gt;&lt;/</span><span style="color:#FFA94D">i</span><span style="color:#868E96">&gt;</span><br>
+                                <span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">i</span> <span style="color:#FFA94D">class</span><span style="color:#868E96">=&quot;</span>fas fa-atom fa-5x<span style="color:#868E96">&quot;&gt;&lt;/</span><span style="color:#FFA94D">i</span><span style="color:#868E96">&gt;</span><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Entry -->
+            <div class="row mt-5"> <!-- Entry -->
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 id="FixedWidthIcons">Fixed Width Icons</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Sometimes a fixed width is very important because without the <span style="color:#FF922B">fa-fw</span> class the icons are not all the same width. This may look very ugly so thankfully this class was added to the framework. In the following examples the icons will have a visible <span style="background-color:#DDAAAA">background</span> to see how the classes are working.</p>
+                            <p><b>Without fixed width</b></p>
+                            <div class="border rounded py-2 px-2 text-center">
+                                <i style="background-color:#DDAAAA" class="fas fa-atom fa-4x"></i><i style="background-color:#AADDAA" class="fas fa-users fa-4x"></i><i style="background-color:#AAAADD" class="fab fa-font-awesome fa-4x"></i>
+                            </div>
+                            <div class="border rounded bg-dark py-2 px-2 text-light">
+                                <span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">i</span> <span style="color:#FFA94D">class</span><span style="color:#868E96">=&quot;</span>fas fa-atom fa-4x<span style="color:#868E96">&quot;&gt;&lt;/</span><span style="color:#FFD8A8">i</span><span style="color:#868E96">&gt;</span><br>
+                                <span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">i</span> <span style="color:#FFA94D">class</span><span style="color:#868E96">=&quot;</span>fas fa-users fa-4x<span style="color:#868E96">&quot;&gt;&lt;/</span><span style="color:#FFD8A8">i</span><span style="color:#868E96">&gt;</span><br>
+                                <span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">i</span> <span style="color:#FFA94D">class</span><span style="color:#868E96">=&quot;</span>fab fa-font-awesome fa-4x<span style="color:#868E96">&quot;&gt;&lt;/</span><span style="color:#FFD8A8">i</span><span style="color:#868E96">&gt;</span>
+                            </div>
+                            <p><b>With <span style="color:#FF922B">fa-fw</span></b></p>
+                            <div class="border rounded py-2 px-2 text-center">
+                                    <i style="background-color:#DDAAAA" class="fas fa-atom fa-4x fa-fw"></i><i style="background-color:#AADDAA" class="fas fa-users fa-4x fa-fw"></i><i style="background-color:#AAAADD" class="fab fa-font-awesome fa-4x fa-fw"></i>
+                            </div>
+                            <div class="border rounded bg-dark py-2 px-2 text-light">
+                                <span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">i</span> <span style="color:#FFA94D">class</span><span style="color:#868E96">=&quot;</span>fas fa-atom fa-4x fa-fw<span style="color:#868E96">&quot;&gt;&lt;/</span><span style="color:#FFD8A8">i</span><span style="color:#868E96">&gt;</span><br>
+                                <span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">i</span> <span style="color:#FFA94D">class</span><span style="color:#868E96">=&quot;</span>fas fa-users fa-4x fa-fw<span style="color:#868E96">&quot;&gt;&lt;/</span><span style="color:#FFD8A8">i</span><span style="color:#868E96">&gt;</span><br>
+                                <span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">i</span> <span style="color:#FFA94D">class</span><span style="color:#868E96">=&quot;</span>fab fa-font-awesome fa-4x fa-fw<span style="color:#868E96">&quot;&gt;&lt;/</span><span style="color:#FFD8A8">i</span><span style="color:#868E96">&gt;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Entry -->
+            <div class="row mt-5"> <!-- Entry -->
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 id="IconsInAList">Icons in a List</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Use <span style="color:#FF922B">fa-ul</span> and <span style="color:#FF922B">fa-li</span> to replace the default bullets in unordered lists.</p>
+                            <p><b>Default List</b></p>
+                            <div class="border rounded py-2 px-2">
+                                <ul>
+                                    <li>Using default bullets</li>
+                                    <li>In a list</li>
+                                    <li>Is lame</li>
+                                </ul>
+                            </div>
+                            <div class="border rounded bg-dark py-2 px-2 text-light">                               
+                                <span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">ul</span><span style="color:#868E96">&gt;</span><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">li</span><span style="color:#868E96">&gt;</span>Using default bullets<span style="color:#868E96">&lt;/</span><span style="color:#FFD8A8">li</span><span style="color:#868E96">&gt;</span><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">li</span><span style="color:#868E96">&gt;</span>In a list<span style="color:#868E96">&lt;/</span><span style="color:#FFD8A8">li</span><span style="color:#868E96">&gt;</span><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">li</span><span style="color:#868E96">&gt;</span>Is lame<span style="color:#868E96">&lt;/</span><span style="color:#FFD8A8">li</span><span style="color:#868E96">&gt;</span><br>
+                                <span style="color:#868E96">&lt;/</span><span style="color:#FFD8A8">ul</span><span style="color:#868E96">&gt;</span>
+                            </div>
+                            <p><b>List with icons</b></p>
+                            <div class="border rounded py-2 px-2">
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Using icons as bullets</li>
+                                    <li><span class="fa-li"><i class="far fa-square"></i></span>In a list</li>
+                                    <li><span class="fa-li"><i class="fab fa-font-awesome"></i></span>IS AWESOME!!</li>
+                                </ul>
+                            </div>
+                            <div class="border rounded bg-dark py-2 px-2 text-light">
+                                <span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">ul</span> <span style="color:#FF922B">class</span><span style="color:#868E96">=&quot;</span>fa-ul<span style="color:#868E96">&quot;&gt;</span><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">li</span> <span style="color:#868E96">&gt;&lt;</span><span style="color:#FFD8A8">span</span> <span style="color:#FF922B">class</span><span style="color:#868E96">=&quot;</span>fa-li<span style="color:#868E96">&quot;&gt;&lt;</span><span style="color:#FFD8A8">i</span> <span style="color:#FF922B">class</span><span style="color:#868E96">=&quot;</span>fas fa-check-square<span style="color:#868E96">&quot;&gt;&lt;/</span><span style="color:#FFD8A8">i</span><span style="color:#868E96">&gt;&lt;/</span><span style="color:#FFD8A8">span</span><span style="color:#868E96">&gt;</span>Using icons as bullets<span style="color:#868E96">&lt;/</span><span style="color:#FFD8A8">li</span><span style="color:#868E96">&gt;</span><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">li</span> <span style="color:#868E96">&gt;&lt;</span><span style="color:#FFD8A8">span</span> <span style="color:#FF922B">class</span><span style="color:#868E96">=&quot;</span>fa-li<span style="color:#868E96">&quot;&gt;&lt;</span><span style="color:#FFD8A8">i</span> <span style="color:#FF922B">class</span><span style="color:#868E96">=&quot;</span>far fa-square<span style="color:#868E96">&quot;&gt;&lt;/</span><span style="color:#FFD8A8">i</span><span style="color:#868E96">&gt;&lt;/</span><span style="color:#FFD8A8">span</span><span style="color:#868E96">&gt;</span>In a list<span style="color:#868E96">&lt;/</span><span style="color:#FFD8A8">li</span><span style="color:#868E96">&gt;</span><br>    
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">li</span> <span style="color:#868E96">&gt;&lt;</span><span style="color:#FFD8A8">span</span> <span style="color:#FF922B">class</span><span style="color:#868E96">=&quot;</span>fa-li<span style="color:#868E96">&quot;&gt;&lt;</span><span style="color:#FFD8A8">i</span> <span style="color:#FF922B">class</span><span style="color:#868E96">=&quot;</span>fab fa-font-awesome<span style="color:#868E96">&quot;&gt;&lt;/</span><span style="color:#FFD8A8">i</span><span style="color:#868E96">&gt;&lt;/</span><span style="color:#FFD8A8">span</span><span style="color:#868E96">&gt;</span>IS AWESOME!!<span style="color:#868E96">&lt;/</span><span style="color:#FFD8A8">li</span><span style="color:#868E96">&gt;</span><br>    
+                                <span style="color:#868E96">&lt;/</span><span style="color:#FFD8A8">ul</span><span style="color:#868E96">&gt;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Entry -->
+            <div class="row mt-5"> <!-- Entry -->
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 id="RotatingIcons">Rotating Icons</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>It is also possible to rotate or flip an icon with <span style="color:#FF922B">fa-rotate-*</span> and <span style="color:#FF922B">fa-flip-*</span></p>
+                            <table class="table table-bordered text-center">
+                                <thead>
+                                    <tr>
+                                        <th>Original</th>
+                                        <th>fa-rotate-90</th>
+                                        <th>fa-rotate-180</th>
+                                        <th>fa-rotate-270</th>
+                                        <th>fa-flip-horizontal</th>
+                                        <th>fa-flip-vertical</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><i class="fab fa-font-awesome fa-3x"></i></td>
+                                        <td><i class="fab fa-font-awesome fa-3x fa-rotate-90"></i></td>
+                                        <td><i class="fab fa-font-awesome fa-3x fa-rotate-180"></i></td>
+                                        <td><i class="fab fa-font-awesome fa-3x fa-rotate-270"></i></td>
+                                        <td><i class="fab fa-font-awesome fa-3x fa-flip-horizontal"></i></td>
+                                        <td><i class="fab fa-font-awesome fa-3x fa-flip-vertical"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Entry -->
+            <div class="row mt-3"> <!-- Entry -->
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 id="AnimatingIcons">Animating Icons</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>The fontawesome framework offers two quick ways to animate an icon. The needed classes are <span style="color:#FF922B">fa-spin</span> and <span style="color:#FF922B">fa-pulse</span>. But be careful: some browsers have problems to find the center of the icon so they start to wobble. There are two fixes for this that may work.</p>
+                            <ul>
+                                <li><b>Switch to the SVG with JavaScript version</b></li>
+                                <li><b>Set the display of the icon you want to animate to <span style="color:#FF922B">display: block;</span></b></li>
+                            </ul>
+                            <p><b>Some examples</b></p>
+                            <div class="border rounded py-2 px-2 fa-3x">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                <i class="fas fa-sync fa-spin"></i>
+                                <i class="fas fa-cog fa-spin"></i>
+                                <i class="fas fa-spinner fa-pulse"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Entry -->
+            <div class="row mt-5"> <!-- Entry -->
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 id="BorderedAndPulledIcons">Bordered and Pulled Icons</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Sometimes you want to wrap text around icons. You can do this with <span style="color:#FF922B">fa-pull-left</span> and <span style="color:#FF922B">fa-pull-right</span>. You can also place a border around the icon with <span style="color:#FF922B">fa-border</span>.</p>
+                            <div class="border rounded py-2 px-2">
+                                <p><i class="fas fa-quote-left fa-pull-left fa-border"></i> <i class="fas fa-quote-right fa-pull-right fa-border"></i> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Entry -->
+            <div class="row mt-5"> <!-- Entry -->
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 id="StackingIcons">Stacking Icons</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>If you want to place two icons over each other you can simply stack them by using <span style="color:#FF922B">fa-stack</span> and <span style="color:#FF922B">fa-stack-1x</span> or <span style="color:#FF922B">fa-stack-2x</span>.</p>
+                            <div class="border rounded py-2 px-2">
+                                <span class="fa-stack fa-2x">
+                                    <i class="fas fa-square fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                                <span class="fa-stack fa-2x">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fas fa-flag fa-stack-1x fa-inverse"></i>
+                                </span>
+                                <span class="fa-stack fa-2x">
+                                    <i class="fas fa-camera fa-stack-1x"></i>
+                                    <i class="fas fa-ban fa-stack-2x fa-inverse" style="color:#FF4422;"></i>
+                                </span>
+                            </div>
+                            <div class="border rounded bg-dark py-2 px-2 text-light">
+                                <span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">span</span> <span style="color:#FF922B">class</span><span style="color:#868E96">=&quot;</span>fa-stack fa-2x<span style="color:#868E96">&quot;&gt;</span><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">i</span> <span style="color:#FF922B">class</span><span style="color:#868E96">=&quot;</span>fas fa-square fa-stack-2x<span style="color:#868E96">&quot;&gt;&lt;/</span><span style="color:#FFD8A8">i</span><span style="color:#868E96">&gt;</span><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">i</span> <span style="color:#FF922B">class</span><span style="color:#868E96">=&quot;</span>fab fa-twitter fa-stack-1x fa-inverse<span style="color:#868E96">&quot;&gt;&lt;/</span><span style="color:#FFD8A8">i</span><span style="color:#868E96">&gt;</span><br>
+                                <span style="color:#868E96">&lt;/</span><span style="color:#FFD8A8">span</span><span style="color:#868E96">&gt;</span><br><br>
+                                <span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">span</span> <span style="color:#FF922B">class</span><span style="color:#868E96">=&quot;</span>fa-stack fa-2x<span style="color:#868E96">&quot;&gt;</span><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">i</span> <span style="color:#FF922B">class</span><span style="color:#868E96">=&quot;</span>fas fa-circle fa-stack-2x<span style="color:#868E96">&quot;&gt;&lt;/</span><span style="color:#FFD8A8">i</span><span style="color:#868E96">&gt;</span><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">i</span> <span style="color:#FF922B">class</span><span style="color:#868E96">=&quot;</span>fas fa-flag fa-stack-1x fa-inverse<span style="color:#868E96">&quot;&gt;&lt;/</span><span style="color:#FFD8A8">i</span><span style="color:#868E96">&gt;</span><br>
+                                <span style="color:#868E96">&lt;/</span><span style="color:#FFD8A8">span</span><span style="color:#868E96">&gt;</span><br><br>
+                                <span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">span</span> <span style="color:#FF922B">class</span><span style="color:#868E96">=&quot;</span>fa-stack fa-2x<span style="color:#868E96">&quot;&gt;</span><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">i</span> <span style="color:#FF922B">class</span><span style="color:#868E96">=&quot;</span>fas fa-camera fa-stack-1x<span style="color:#868E96">&quot;&gt;&lt;/</span><span style="color:#FFD8A8">i</span><span style="color:#868E96">&gt;</span><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#868E96">&lt;</span><span style="color:#FFD8A8">i</span> <span style="color:#FF922B">class</span><span style="color:#868E96">=&quot;</span>fas fa-ban fa-stack-2x fa-inverse<span style="color:#868E96">&quot; <span style="color:#FF922B">style</span></span><span style="color:#868E96">=&quot;</span>color:#FF4422;<span style="color:#868E96">&quot;&gt;&lt;/</span><span style="color:#FFD8A8">i</span><span style="color:#868E96">&gt;</span><br>
+                                <span style="color:#868E96">&lt;/</span><span style="color:#FFD8A8">span</span><span style="color:#868E96">&gt;</span><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Entry -->
+            <div class="row mt-5"> <!-- Entry -->
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 id="PowerTransforms">Power Transforms</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 rounded py-1 px-2 text-center" style="background-color:#FFFFAA">
+                            <b>Warning</b><hr>
+                            <p>This feature only works if you use the SVG with JavaScript version!</p>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <p>The following options are going in a new attribute called <span style="color:#FF922B">data-fa-transform</span>. This is one reason why SVG with JS is needed for these options.</p>
+                            <h4>Scaling</h4>
+                            <p>You can use <span style="color:#FF922B">grow-#</span> and <span style="color:#FF922B">shrink-#</span> to scale icons. You can even use decimals.</p>
+                            <table class="table text-center table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>shrink-8</th>
+                                        <th>shrink-3.35</th>
+                                        <th>Original</th>
+                                        <th>grow-8</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><i class="fas fa-atom fa-4x" data-fa-transform="shrink-8" style="background-color:#DDAAAA"></i></td>
+                                        <td><i class="fas fa-atom fa-4x" data-fa-transform="shrink-3.35" style="background-color:#DDAAAA"></i></td>
+                                        <td><i class="fas fa-atom fa-4x" style="background-color:#DDAAAA"></i></td>
+                                        <td><i class="fas fa-atom fa-4x" data-fa-transform="grow-8" style="background-color:#DDAAAA"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            The code for the shrink-8 example is<br>
+                            <div class="border bg-dark rounded py-2 px-2 text-light">
+                                &lt;i class=&quot;fas fa-atom fa-4x&quot; <span style="color:#FF4422">data-fa-transform=&quot;shrink-8&quot;</span> style=&quot;background-color:#DDAAAA&quot;&gt;&lt;/i&gt;
+                            </div>
+                            so you can see how to use the new attribute.
+                            <br><br>
+                            <h4>Positioning</h4>
+                            <p>This works just like scaling but here you have the options <span style="color:#FF922B">up-#</span>, <span style="color:#FF922B">down-#</span>, <span style="color:#FF922B">left-#</span> and <span style="color:#FF922B">right-#</span>. Keep in mind that you can combine them too!</p>
+                            <p>All Icons are scaled down with <span style="color:#FF922B">shrink-8</span> so you can see the background for better understanding.</p>
+                            <table class="table text-center table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Original</th>
+                                        <th>up-4</th>
+                                        <th>down-4</th>
+                                        <th>left-4</th>
+                                        <th>right-4</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><i class="fas fa-atom fa-4x" data-fa-transform="shrink-8" style="background-color:#DDAAAA"></i></td>
+                                        <td><i class="fas fa-atom fa-4x" data-fa-transform="shrink-8 up-4" style="background-color:#DDAAAA"></i></td>
+                                        <td><i class="fas fa-atom fa-4x" data-fa-transform="shrink-8 down-4" style="background-color:#DDAAAA"></i></td>
+                                        <td><i class="fas fa-atom fa-4x" data-fa-transform="shrink-8 left-4" style="background-color:#DDAAAA"></i></td>
+                                        <td><i class="fas fa-atom fa-4x" data-fa-transform="shrink-8 right-4" style="background-color:#DDAAAA"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <h4>Rotating and Flipping</h4>
+                            <p>Instead of using the old method to rotate icons you can now use <span style="color:#FF922B">rotate-#</span>, <span style="color:#FF922B">flip-v</span> and <span style="color:#FF922B">flip-h</span>. This method gives you the freedom to rotate the icon by any degree.</p>
+                            <table class="table table-bordered text-center">
+                                <thead>
+                                    <tr>
+                                        <th>Original</th>
+                                        <th>rotate-35</th>
+                                        <th>rotate-74.5</th>
+                                        <th>flip-h</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><i class="fab fa-font-awesome fa-4x" style="background-color:#DDAAAA"></i></td>
+                                        <td><i class="fab fa-font-awesome fa-4x" data-fa-transform="rotate-35" style="background-color:#DDAAAA"></i></td>
+                                        <td><i class="fab fa-font-awesome fa-4x" data-fa-transform="rotate-74.5" style="background-color:#DDAAAA"></i></td>
+                                        <td><i class="fab fa-font-awesome fa-4x" data-fa-transform="flip-h" style="background-color:#DDAAAA"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Entry -->
+            <div class="row mt-5"> <!-- Entry -->
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 id="MaskingIcons">Masking Icons</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 rounded py-1 px-2 text-center" style="background-color:#FFFFAA">
+                            <b>Warning</b><hr>
+                            <p>This feature only works if you use the SVG with JavaScript version!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>It is also possible to mask icons instead of simply stacking them. This way anything behind the icons will show through the icons.</p>
+                            <p><b>Advanced example</b></p>
+                            <div class="border rounded py-2 px-2">
+                                <i class="fab fa-facebook-f fa-4x" data-fa-transform="shrink-4 down-2 right-1.5" data-fa-mask="fas fa-circle" style="background-color:#DDAAAA"></i>
+                            </div>
+                            <p>The code looks like this</p>
+                            <div class="border rounded bg-dark py-2 px-2 text-white">
+                                &lt;i class=&quot;fab fa-facebook-f fa-4x&quot; data-fa-transform=&quot;shrink-4 down-2 right-1.5&quot; data-fa-mask=&quot;fas fa-circle&quot; style=&quot;background-color:#DDAAAA&quot;&gt;&lt;/i&gt;
+                            </div>
+                            <p>The main icon is the icon you want to cut out. The <span style="color:#FF922B">data-fa-mask</span> icon is the one that will get cut. All <span style="color:#FF922B">data-fa-transform</span> options will only apply to the main icon.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Entry -->
+            <div class="row mt-5 mb-5"> <!-- Entry -->
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 id="LayeringTextCounters">Layering, Text and Counters</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Layers are an alternative to stacking icons. With layers the background wont show through too. Layers are a little bit more advanced because you can use text and counters too.</p>
+                            <p><b>Examples</b></p>
+                            <div class="border rounded py-2 px-2">
+                                <div class="fa-4x">
+                                    <span class="fa-layers fa-fw" style="background-color:#DDAAAA">
+                                        <i class="fas fa-circle" style="color:#FF4422"></i>
+                                        <i class="fas fa-times fa-inverse" data-fa-transform="shrink-5"></i>
+                                    </span>
+                                    <span class="fa-layers fa-fw" style="background-color:#DDAAAA">
+                                        <i class="fas fa-play" data-fa-transform="rotate--90 grow-2"></i>
+                                        <i class="fas fa-sun fa-inverse" data-fa-transform="shrink-12 up-4"></i>
+                                        <i class="fas fa-moon fa-inverse" data-fa-transform="shrink-12 down-4 left-4"></i>
+                                        <i class="fas fa-star fa-inverse" data-fa-transform="shrink-12 down-4 right-4"></i>
+                                    </span>
+                                    <span class="fa-layers fa-fw" style="background-color:#DDAAAA">
+                                        <i class="fas fa-calendar" data-fa-transform="shrink-1"></i>
+                                        <span class="fa-layers-text fa-inverse" data-fa-transform="shrink-7 down-2.5">15</span>
+                                    </span>
+                                    <span class="fa-layers fa-fw" style="background-color:#DDAAAA">
+                                        <i class="fas fa-envelope"></i>
+                                        <span class="fa-layers-counter" style="background-color:#FF4422">164</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <p><b>Code</b></p>
+                            <div class="border rounded bg-dark py-2 px-2 text-light">
+                                &lt;div class=&quot;fa-4x&quot;&gt;<br><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class=&quot;fa-layers fa-fw&quot; style=&quot;background-color:#DDAAAA&quot;&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class=&quot;fas fa-circle&quot; style=&quot;color:#FF4422&quot;&gt;&lt;/i&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class=&quot;fas fa-times fa-inverse&quot; data-fa-transform=&quot;shrink-5&quot;&gt;&lt;/i&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class=&quot;fa-layers fa-fw&quot; style=&quot;background-color:#DDAAAA&quot;&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class=&quot;fas fa-play&quot; data-fa-transform=&quot;rotate--90 grow-2&quot;&gt;&lt;/i&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class=&quot;fas fa-sun fa-inverse&quot; data-fa-transform=&quot;shrink-12 up-4&quot;&gt;&lt;/i&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class=&quot;fas fa-moon fa-inverse&quot; data-fa-transform=&quot;shrink-12 down-4 left-4&quot;&gt;&lt;/i&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class=&quot;fas fa-star fa-inverse&quot; data-fa-transform=&quot;shrink-12 down-4 right-4&quot;&gt;&lt;/i&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class=&quot;fa-layers fa-fw&quot; style=&quot;background-color:#DDAAAA&quot;&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class=&quot;fas fa-calendar&quot; data-fa-transform=&quot;shrink-1&quot;&gt;&lt;/i&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class=&quot;fa-layers-text fa-inverse&quot; data-fa-transform=&quot;shrink-7 down-2.5&quot;&gt;15&lt;/span&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class=&quot;fa-layers fa-fw&quot; style=&quot;background-color:#DDAAAA&quot;&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class=&quot;fas fa-envelope&quot;&gt;&lt;/i&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class=&quot;fa-layers-counter&quot; style=&quot;background-color:#FF4422&quot;&gt;164&lt;/span&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;<br><br>
+                                &lt;/div&gt;
+                            </div>
+                            <p>You can also change the position of the counter with <span style="color:#FF922B">fa-layers-bottom-left</span>, <span style="color:#FF922B">fa-layers-bottom-right</span>, <span style="color:#FF922B">fa-layers-top-left</span> and <span style="color:#FF922B">fa-layers-top-right</span>. You need to assign one of these classes to the span that contains the number.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Entry -->
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+</html>

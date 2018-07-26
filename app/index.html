@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Font Awesome Viewer</title>
+    <style>
+        a{
+            color:#000000;
+        }
+
+        a:link{
+            color:#000000;
+        }
+
+        a:active{
+            color:#000000;
+        }
+
+        a:visited{
+            color:#000000;
+        }
+
+        .card-header{
+            transition: background-color 200ms, color 200ms;
+        }
+
+        .card-header:hover{
+            background-color:#2288FF;
+            color:#FFFFFF;
+        }
+
+        .card-header:hover a{
+            color:#FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col-3">
+            <div class="row mt-3">
+                <div class="col-12">
+                    <a href="/index.html" class="btn btn-outline-primary btn-block">Alle</a>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <a href="/index.html?style=brands" class="btn btn-outline-primary btn-block">Brands</a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12">
+                    <a href="/index.html?style=solid" class="btn btn-outline-primary btn-block">Solid</a>
+                </div>
+            </div>  
+            <div class="row mt-3">
+                <div class="col-12">
+                    <a href="/index.html?style=regular" class="btn btn-outline-primary btn-block">Regular</a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12">
+                    <a href="/index.html?style=light" class="btn btn-outline-primary btn-block">Light</a>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 input-group">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="versionSelect">Added</label>
+                    </div>
+                    <select class="custom-select" id="versionSelect">
+                        <option value="" selected>Choose version...</option>
+                        <option value="5.2.0">5.2.0</option>
+                        <option value="5.1.0">5.1.0</option>
+                        <option value="5.0.13">5.0.13</option>
+                        <option value="5.0.12">5.0.12</option>
+                        <option value="5.0.11">5.0.11</option>
+                        <option value="5.0.10">5.0.10</option>
+                        <option value="5.0.9">5.0.9</option>
+                        <option value="5.0.7">5.0.7</option>
+                        <option value="5.0.5">5.0.5</option>
+                        <option value="5.0.3">5.0.3</option>
+                        <option value="5.0.2">5.0.2</option>
+                        <option value="5.0.1">5.0.1</option>
+                        <option value="5.0.0">5.0.0</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-12">
+                    <button class="btn btn-outline-primary btn-block" id="versionButton">Select</button>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 bg-dark"></div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12">
+                    <a href="/wiki.html" class="btn btn-outline-primary btn-block">Wiki</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-9">
+            <div class="row" id="icons">
+                
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        let style = getUrlParameter('style');
+        let version = getUrlParameter('version');
+        let ajUrl = '/icons';
+        $(document).ready(() => {
+            $('#versionButton').on('click', () => {
+                let version = $('#versionSelect').val();
+                if(version != ""){
+                    let url = "/index.html?version=" + version;
+                    document.location=url;
+                }
+            });
+            if(style == "brands" || style == "solid" || style == "regular" || style == "light")
+            {
+                ajUrl += '/?style=' + style;
+            }
+            if(version != null){
+                ajUrl += '/?version=' + version;
+            }
+            $.ajax({
+                method:'GET',
+                url:ajUrl,
+                success:(data) => {
+                    $('#icons').append(data);
+                }
+            });
+        });
+
+        function getUrlParameter(sParam) {
+        var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};
+    </script>
+</body>
+</html>
